@@ -26,8 +26,8 @@
   max-width: 680px;
 }
 .hero-logo {
-  width: 450px; height: 450px;
-  max-width: 65vw; max-height: 65vw;
+  width: 380px; height: 380px;
+  max-width: 55vw; max-height: 55vw;
   margin: 0 auto 28px;
 }
 .hero-logo img {
