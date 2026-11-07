@@ -59,6 +59,7 @@
       'lbl-release':     'Release:',
       'btn-details':     'Details',
       'btn-buy-steam':   'Play For Free',
+      'btn-lock-steam':  'NOT AVAILABLE',
       'store-note':      'Download the game through the gamejolt platform.',
       /*vision and Mission*/
       'vm-vision-title': 'Vision',
@@ -389,6 +390,7 @@
       'lbl-release':     'Rilis:',
       'btn-details':     'Detail',
       'btn-buy-steam':   'Mainkan Gratis',
+      'btn-lock-steam':  'Tidak Tersedia',
       'store-note':      'Unduh game melalui platform gamejolt',
       /* Vision and Mission*/
       'vm-vision-title': 'Visi',
