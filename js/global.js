@@ -11,7 +11,6 @@
       'nav-home':        'Home',
       'nav-about':       'About Us',
       'nav-projects':    'Projects',
-      'nav-news':        'News',
       'nav-careers':     'Careers',
       'nav-store':       'Store',
       'hero-tagline':    'Nowl Vision Games is a home-based indie game studio focused on developing horror games that draw upon local culture, myths, folklore, and urban legends.',
@@ -22,7 +21,7 @@
       'btn-view-project':'View Project',
       'proj-demit-desc': 'Survival horror rooted in Javanese mythology.',
       'proj-pg-desc':    'Psychological horror from Indonesian folklore.',
-      'proj-gombel-desc':'First-person survival horror, currently in development.',
+      'proj-gombel-desc':'First-person psychological horror, currently in development.',
       'sec-news':        'News',
       'sec-gallery':     'Gallery',
       'sec-careers':     'Careers',
@@ -52,7 +51,7 @@
       'sec-completed':   'Completed Projects',
       'sec-upcoming':    'Upcoming Project',
       'badge-soon':      'Coming Soon',
-      'upcoming-desc':   'Gombel is a horror game that tells the story of a mythological legend known locally as Wewe Gombel or Kalong Wewe. This figure is associated with the disappearance of children playing outside after dusk. The game is still in development, so its not yet available on any platforms. Stay tuned for further news and information about this game.',
+      'upcoming-desc':   'DEMIT UNBROKEN CHAIN ​​is a first-person psychological horror game a remake of a previously published title, Demit. This version features an all-new story, atmosphere, gameplay mechanics, and puzzles, all designed to be even more chilling than the original. Stay tuned to the Nowl Vision Games website for the latest updates!',
       /* News */
       'sec-recent':      'Recent News',
       /* Store */
@@ -342,7 +341,6 @@
       'nav-home':        'Beranda',
       'nav-about':       'Tentang Kami',
       'nav-projects':    'Proyek',
-      'nav-news':        'Berita',
       'nav-careers':     'Karir',
       'nav-store':       'Toko',
       'hero-tagline':    'Nowl Vision Games adalah studio game indie rumahan yang berfokus pada pengembangan game horor dengan mengangkat budaya, mitos, cerita rakyat, dan urban legend lokal.',
@@ -353,7 +351,7 @@
       'btn-view-project':'Lihat Proyek',
       'proj-demit-desc': 'Horor bertahan hidup berakar pada mitologi Jawa.',
       'proj-pg-desc':    'Horor psikologis dari cerita rakyat Indonesia.',
-      'proj-gombel-desc':'Horor bertahan hidup orang pertama, masih dalam pengembangan.',
+      'proj-gombel-desc':'Horor psikologis orang pertama, masih dalam pengembangan.',
       'sec-news':        'Berita',
       'sec-gallery':     'Galeri',
       'sec-careers':     'Karir',
@@ -383,7 +381,7 @@
       'sec-completed':   'Proyek Selesai',
       'sec-upcoming':    'Proyek Mendatang',
       'badge-soon':      'Segera Hadir',
-      'upcoming-desc':   'Gombel adalah gim horor yang menceritakan kisah legenda mitologi yang dikenal secara lokal sebagai Wewe Gombel atau Kalong Wewe. Sosok ini dikaitkan dengan hilangnya anak-anak yang bermain di luar setelah magrib. game ini masih dalam tahap pengembangan, sehingga belum tersedia di platform mana pun. Nantikan berita dan informasi lebih lanjut tentang game ini.',
+      'upcoming-desc':   'DEMIT UNBROKEN CHAIN ​​adalah gim horor psikologis sudut pandang orang pertama sebuah remake dari judul yang pernah dirilis sebelumnya, Demit. Versi ini menghadirkan cerita, atmosfer, mekanisme permainan, dan teka-teki yang sepenuhnya baru, semuanya dirancang agar jauh lebih mencekam daripada versi orisinalnya. Pantau terus situs web Nowl Vision Games untuk mendapatkan informasi terbaru!',
       /* News */
       'sec-recent':      'Berita Terbaru',
       /* Store */
