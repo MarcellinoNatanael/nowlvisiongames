@@ -1,6 +1,6 @@
 /* ===== CAREER-DETAIL.CSS ===== */
 
-.job-detail-section { background: #111111; }
+.job-detail-section { background: transparent; }
 .job-column { max-width: 820px; margin: 0 auto; }
 
 .job-back {

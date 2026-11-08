@@ -28,7 +28,7 @@
 /* ============================================================
    BLOG LISTING (blog.html)
    ============================================================ */
-.blog-list-section { background: #111111; }
+.blog-list-section { background: transparent; }
 
 .blog-filter {
   display: flex;
@@ -96,7 +96,7 @@
 /* ============================================================
    ARTICLE PAGE (article-template.html)
    ============================================================ */
-.article-main { background: #111111; padding: 140px 0 5rem; }
+.article-main { background: transparent; padding: 140px 0 5rem; }
 
 @media (max-width: 768px) {
   .article-main { padding-top: 110px; }

@@ -1,5 +1,5 @@
 /* ===== STORE.CSS ===== */
-.store-section { background: #111111; }
+.store-section { background: transparent; }
 .store-grid { display: flex; flex-direction: column; gap: 60px; }
 
 .store-card {

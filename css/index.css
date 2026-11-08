@@ -52,7 +52,7 @@
 .btn-cta { font-size: 15px; padding: 14px 40px; }
 
 /* ---- PROJECTS CAROUSEL ---- */
-.projects-section { background: #111111; }
+.projects-section { background: transparent; }
 .section-subtitle {
   max-width: 560px;
   margin: 0 auto 22px;
@@ -162,7 +162,7 @@
 .btn-project-view:hover i { transform: translateX(3px); }
 
 /* ---- NEWS GRID ---- */
-.news-section { background: #111111; }
+.news-section { background: transparent; }
 .news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -201,7 +201,7 @@
 }
 
 /* ---- GALLERY ---- */
-.gallery-section { background: #111111; }
+.gallery-section { background: transparent; }
 .gallery-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 4px; min-height: 380px; }
 .gallery-large { background: #1a1a1a; overflow: hidden; }
 .gallery-large img { width: 100%; height: 100%; object-fit: cover; }
@@ -210,7 +210,7 @@
 .gallery-small img { width: 100%; height: 100%; object-fit: cover; }
 
 /* ---- CAREERS PREVIEW ---- */
-.careers-section { background: #111111; }
+.careers-section { background: transparent; }
 .careers-sub {
   font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
   font-size: 22px;

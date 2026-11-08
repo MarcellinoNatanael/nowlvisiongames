@@ -1,6 +1,6 @@
 /* ===== PROJECTS.CSS ===== */
 
-.completed-section { background: #111111; }
+.completed-section { background: transparent; }
 .projects-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 4px; }
 .project-item {
   position: relative; background: #1a1a1a;
