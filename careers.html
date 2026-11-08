@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers — Nowl Vision Games</title>
+  <meta name="description" content="Lihat lowongan terbaru di Nowl Vision Games dan bergabunglah dengan studio game indie Indonesia yang mengembangkan game horor psikologis berbasis budaya lokal.">
+  <meta name="keywords" content="karir Nowl Vision Games, lowongan game developer, lowongan studio game Indonesia, game tester intern, freelance game artist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nusainteractivestudio.com/careers.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nowl Vision Games">
+  <meta property="og:title" content="Careers — Nowl Vision Games">
+  <meta property="og:description" content="Bergabunglah dengan Nowl Vision Games dan bantu membawa cerita rakyat Indonesia ke panggung game horor dunia.">
+  <meta property="og:url" content="https://nusainteractivestudio.com/careers.html">
+  <meta property="og:image" content="https://nusainteractivestudio.com/assets/logo/Main_Logo.png">
+  <meta property="og:locale" content="id_ID">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Careers — Nowl Vision Games">
+  <meta name="twitter:description" content="Bergabunglah dengan Nowl Vision Games dan bantu membawa cerita rakyat Indonesia ke panggung game horor dunia.">
+  <meta name="twitter:image" content="https://nusainteractivestudio.com/assets/logo/Main_Logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="css/global.css?v=20261108">
+  <link rel="stylesheet" href="css/careers.css?v=20261108">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav class="nis-navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo/Company_Logo_Only.png" alt="Nowl Vision Games" class="logo-img">
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link" data-t="nav-home">Home</a></li>
+      <li><a href="about.html" class="nav-link" data-t="nav-about">About Us</a></li>
+      <li><a href="projects.html" class="nav-link" data-t="nav-projects">Projects</a></li>
+      <li><a href="blog.html" class="nav-link" data-t="nav-blog">Blog</a></li>
+      <li><a href="store.html" class="nav-link" data-t="nav-store">Store</a></li>
+      <li><a href="careers.html" class="nav-link active" data-t="nav-careers">Careers</a></li>
+      <li class="lang-toggle">
+        <button class="lang-btn active" data-lang="id">ID</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <img src="assets/image/Header.png?v=20260908" alt="" class="hero-bg-img">
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-text"><h1 class="page-hero-title" data-t="nav-careers">Careers</h1></div>
+</div>
+
+<section class="section careers-main-section">
+  <div class="container">
+    <h2 class="section-title" data-t="careers-vacancy-list">Vacancy List</h2>
+    <div class="section-underline"></div>
+
+    <form class="vacancy-filters" id="vacancyFilters" role="search">
+      <label class="sr-only" for="vacancySearch" data-t="careers-th-position">Position</label>
+      <input type="search" class="vacancy-input" id="vacancySearch" placeholder="Search position..." data-t="careers-search-ph" autocomplete="off">
+
+      <label class="sr-only" for="vacancyDept" data-t="careers-th-dept">Department</label>
+      <select class="vacancy-select" id="vacancyDept">
+        <option value="" data-t="careers-all-dept">All Departments</option>
+      </select>
+
+      <label class="sr-only" for="vacancyDiv" data-t="careers-th-div">Division</label>
+      <select class="vacancy-select" id="vacancyDiv">
+        <option value="" data-t="careers-all-div">All Divisions</option>
+      </select>
+
+      <label class="sr-only" for="vacancyContract" data-t="careers-th-contract">Contract Type</label>
+      <select class="vacancy-select" id="vacancyContract">
+        <option value="" data-t="careers-all-contract">All Contracts</option>
+      </select>
+
+      <button type="submit" class="vacancy-search-btn">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <span class="sr-only" data-t="careers-search-btn">Search</span>
+      </button>
+    </form>
+
+    <div class="vacancy-head" id="vacancyHead" aria-hidden="true">
+      <span data-t="careers-th-position">Position</span>
+      <span data-t="careers-th-dept">Department</span>
+      <span data-t="careers-th-div">Division</span>
+      <span data-t="careers-th-contract">Contract Type</span>
+      <span></span>
+    </div>
+    <ul class="vacancy-list" id="vacancyList"></ul>
+    <p class="vacancy-empty" id="vacancyEmpty" hidden></p>
+  </div>
+</section>
+
+<footer class="nis-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4 class="footer-heading" data-t="foot-social">Social Media</h4>
+      <div class="footer-divider"></div>
+      <ul class="social-list">
+        <li>
+          <a href="https://instagram.com/nusainteractivestudio" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram social-icon"></i>
+            <span>INSTAGRAM</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.threads.com/@nusainteractivestudio" target="_blank" rel="noopener" aria-label="Threads">
+            <i class="fa-brands fa-threads social-icon"></i>
+            <span>THREADS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <i class="fa-brands fa-x-twitter social-icon"></i>
+            <span>TWITTER</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" rel="noopener" aria-label="Discord">
+            <i class="fa-brands fa-discord social-icon"></i>
+            <span>DISCORD</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-heading" data-t="foot-content">Website Content</h4>
+      <div class="footer-divider"></div>
+      <ul class="footer-links">
+        <li><a href="index.html"    data-t="nav-home">HOME</a></li>
+        <li><a href="about.html"    data-t="nav-about">ABOUT US</a></li>
+        <li><a href="projects.html" data-t="nav-projects">PROJECTS</a></li>
+        <li><a href="store.html" data-t="nav-store">STORE</a></li>
+        <li><a href="careers.html" data-t="nav-careers">CAREERS</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-heading" data-t="foot-legal">Legal &amp; Policy</h4>
+      <div class="footer-divider"></div>
+      <ul class="footer-links">
+        <li><a href="terms_and_condition.html" data-t="foot-terms">TERMS AND CONDITION</a></li>
+        <li><a href="privacy_and_policy.html" data-t="foot-privacy">PRIVACY POLICY</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-heading" data-t="foot-games">Contact Us</h4>
+      <div class="footer-divider"></div>
+      <ul class="footer-links">
+        <li><a class="inline-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=nowlvisiongames@gmail.com" target="_blank" rel="noopener">nowlvisiongames@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Nowl Vision Games. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/global.js?v=20261108"></script>
+<script src="js/careers-data.js?v=20261108"></script>
+<script src="js/careers.js?v=20261108"></script>
+</body>
+</html>

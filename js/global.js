@@ -336,7 +336,30 @@
       'blog3-tag-1': 'Cultural Preservation',
       'blog3-tag-2': 'Local Games',
       'blog3-author-desc': 'An indie home studio focused on bringing local culture, myths, folklore, and urban legends into psychological horror games.',
-      'blog3-read-time': '2 min read'
+      'blog3-read-time': '2 min read',
+
+      /* ================= CAREERS: careers.html + career_detail.html ================= */
+      'careers-vacancy-list':     'Vacancy List',
+      'careers-search-ph':        'Search position...',
+      'careers-search-btn':       'Search',
+      'careers-all-dept':         'All Departments',
+      'careers-all-div':          'All Divisions',
+      'careers-all-contract':     'All Contracts',
+      'careers-th-position':      'Position',
+      'careers-th-dept':          'Department',
+      'careers-th-div':           'Division',
+      'careers-th-contract':      'Contract Type',
+      'careers-empty-filter':     'No vacancies match your search.',
+      'careers-empty-none':       'No open positions right now.',
+      'careers-back':             'Back to Vacancy List',
+      'careers-responsibilities': 'Responsibilities',
+      'careers-requirements':     'Requirements',
+      'careers-benefits':         'What You Get',
+      'careers-how-apply':        'How To Apply',
+      'careers-apply-now':        'Apply Now',
+      'careers-apply-note':       '*If the "Apply Now" button is not working, please directly apply via',
+      'careers-apply-form':       'Application Form',
+      'careers-not-found':        'Position not found'
     },
     id: {
       'nav-home':        'Beranda',
@@ -667,7 +690,30 @@
       'blog3-tag-1': 'Pelestarian Budaya',
       'blog3-tag-2': 'Game Lokal',
       'blog3-author-desc': 'Studio game indie rumahan yang fokus mengangkat budaya, mitos, cerita rakyat, dan urban legend lokal ke dalam game horor psikologis.',
-      'blog3-read-time': '2 menit baca'
+      'blog3-read-time': '2 menit baca',
+
+      /* ================= KARIR: careers.html + career_detail.html ================= */
+      'careers-vacancy-list':     'Daftar Lowongan',
+      'careers-search-ph':        'Cari posisi...',
+      'careers-search-btn':       'Cari',
+      'careers-all-dept':         'Semua Departemen',
+      'careers-all-div':          'Semua Divisi',
+      'careers-all-contract':     'Semua Kontrak',
+      'careers-th-position':      'Posisi',
+      'careers-th-dept':          'Departemen',
+      'careers-th-div':           'Divisi',
+      'careers-th-contract':      'Tipe Kontrak',
+      'careers-empty-filter':     'Tidak ada lowongan yang sesuai.',
+      'careers-empty-none':       'Belum ada lowongan yang dibuka.',
+      'careers-back':             'Kembali ke Daftar Lowongan',
+      'careers-responsibilities': 'Tanggung Jawab',
+      'careers-requirements':     'Persyaratan',
+      'careers-benefits':         'Yang Anda Dapatkan',
+      'careers-how-apply':        'Cara Melamar',
+      'careers-apply-now':        'Lamar Sekarang',
+      'careers-apply-note':       '*Jika tombol "Lamar Sekarang" tidak berfungsi, silakan langsung melamar melalui',
+      'careers-apply-form':       'Formulir Lamaran',
+      'careers-not-found':        'Posisi tidak ditemukan'
     }
   };
 
@@ -694,7 +740,16 @@
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
+
+    // Lets pages with JS-rendered text (career detail) refresh after a toggle
+    document.dispatchEvent(new CustomEvent('nvg:langchange', { detail: { lang: lang } }));
   }
+
+  /* ---- Translation access for JS-rendered labels (careers pages) ---- */
+  window.NVG_getLang = function () { return currentLang; };
+  window.NVG_t = function (key) {
+    return T[currentLang] && T[currentLang][key] !== undefined ? T[currentLang][key] : '';
+  };
 
   /* ---- Navbar ---- */
   document.addEventListener('DOMContentLoaded', function () {
@@ -711,15 +766,36 @@
 
     // Hamburger
     if (hamburger && menu) {
-      hamburger.addEventListener('click', function () {
-        var open = menu.classList.toggle('open');
+      var setMenuOpen = function (open) {
+        menu.classList.toggle('open', open);
         hamburger.classList.toggle('open', open);
+        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (navbar) navbar.classList.toggle('menu-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      };
+      var isMenuOpen = function () { return menu.classList.contains('open'); };
+
+      setMenuOpen(false);
+
+      hamburger.addEventListener('click', function () {
+        setMenuOpen(!isMenuOpen());
       });
       menu.querySelectorAll('.nav-link').forEach(function (l) {
-        l.addEventListener('click', function () {
-          menu.classList.remove('open');
-          hamburger.classList.remove('open');
-        });
+        l.addEventListener('click', function () { setMenuOpen(false); });
+      });
+
+      // Close on outside click, Escape, or when the viewport leaves the mobile layout
+      document.addEventListener('click', function (e) {
+        if (isMenuOpen() && navbar && !navbar.contains(e.target)) setMenuOpen(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isMenuOpen()) {
+          setMenuOpen(false);
+          hamburger.focus();
+        }
+      });
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768 && isMenuOpen()) setMenuOpen(false);
       });
     }
 

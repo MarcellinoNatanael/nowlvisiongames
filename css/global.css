@@ -315,17 +315,33 @@ h3                   { font-size: 20px; }
 @media (max-width: 900px) {
   .footer-inner { grid-template-columns: repeat(2,1fr); }
 }
+/* Narrow desktops: keep all nav links on one row */
+@media (min-width: 769px) and (max-width: 900px) {
+  .nav-inner { padding-left: 20px; padding-right: 20px; }
+  .nav-menu  { gap: 12px; }
+  .nav-menu li { white-space: nowrap; }
+}
 @media (max-width: 768px) {
+  /* ---- Mobile nav: logo bar + dropdown form one panel ---- */
+  .nav-inner { flex-wrap: wrap; }
   .nav-menu {
     display: none;
-    position: absolute;
-    top: 63px; left: 0; right: 0;
-    background: rgba(0,0,0,.97);
+    position: static;
+    flex-basis: 100%;
+    order: 3;
     flex-direction: column; align-items: flex-start;
-    padding: 20px 24px; gap: 20px;
+    padding: 14px 0 20px; gap: 20px;
   }
   .nav-menu.open  { display: flex; }
   .nav-hamburger  { display: flex; }
+  /* The background lives only on .nis-navbar so the image runs unbroken behind logo + menu */
+  .nis-navbar.menu-open {
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)), url('../assets/image/BG_Menu.png') center top / cover no-repeat #000;
+    transition: none;
+    max-height: 100vh;
+    max-height: 100dvh;
+    overflow-y: auto;
+  }
   h1, .page-hero-title { font-size: 36px; }
   h2, .section-title   { font-size: 20px; }
   .section    { padding: 52px 0; }
