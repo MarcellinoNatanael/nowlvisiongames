@@ -104,11 +104,11 @@
       'terms-note': 'This document is a general Terms and Conditions framework prepared based on the structure of the Nowl Vision Games website, taking into account the Studio\u2019s status as an indie project that is not yet a registered legal entity. This document <strong>is not a substitute for professional legal advice</strong>. Before official publication, it is strongly recommended to have it reviewed by a legal consultant to ensure compliance with the regulations applicable in your jurisdiction, particularly regarding limitation of liability and indemnification clauses.',
 
       'terms-h-01': 'Introduction',
-      'terms-p-01-a': 'Welcome to <strong>nusainteractivestudio.com</strong> ("Site"), operated by Nowl Vision Games ("we", "Studio"). By accessing or using this Site, you ("User") agree to be bound by the following Terms and Conditions. If you do not agree to any part of these terms, please refrain from continuing to use the Site.',
+      'terms-p-01-a': 'Welcome to <strong>nowlvisiongames.com</strong> ("Site"), operated by Nowl Vision Games ("we", "Studio"). By accessing or using this Site, you ("User") agree to be bound by the following Terms and Conditions. If you do not agree to any part of these terms, please refrain from continuing to use the Site.',
       'terms-p-01-b': '<strong>Nowl Vision Games</strong> is the name of an independent (indie) creative project/brand run by an individual and/or a team of developers, and is <strong>currently not registered as a formal legal entity</strong> (such as a PT or CV) in Indonesia. All activities, communications, and products released under this name are carried out as part of this independent project. Should the institutional status change to a formal legal entity in the future, these Terms and Conditions will be updated to reflect that change.',
 
       'terms-h-02': 'Definitions',
-      'terms-li-02-situs':    '<strong>Site</strong> refers to nusainteractivestudio.com, including all pages and subdomains within it.',
+      'terms-li-02-situs':    '<strong>Site</strong> refers to nowlvisiongames.com, including all pages and subdomains within it.',
       'terms-li-02-konten':   '<strong>Content</strong> includes text, images, videos, logos, and other materials published on the Site.',
       'terms-li-02-produk':   '<strong>Product</strong> refers to the games and digital assets developed by Nowl Vision Games, including but not limited to DEMIT and Perjanjian Gaib.',
       'terms-li-02-pengguna': '<strong>User</strong> means any individual who accesses or interacts with the Site.',
@@ -180,7 +180,7 @@
       'privacy-note': 'This document is a general Privacy Policy framework prepared based on the structure of the Nowl Vision Games website, taking into account that this Site is static (it has no forms, user accounts, or payment processing), and the Studio\u2019s status as an indie project that is not yet a registered legal entity. This document <strong>is not a substitute for professional legal advice</strong>. Before official publication, it is recommended to have it reviewed by a legal consultant to ensure compliance with applicable data protection regulations (such as Indonesia\u2019s Personal Data Protection Law/UU PDP).',
 
       'privacy-h-01': 'Introduction',
-      'privacy-p-01-a': 'Nowl Vision Games ("we", "Studio") values the privacy of every visitor to <strong>nusainteractivestudio.com</strong> ("Site"). This Privacy Policy explains how this Site operates in relation to visitor data, given that our Site is a static site that serves as an informational medium rather than a platform that actively collects user data.',
+      'privacy-p-01-a': 'Nowl Vision Games ("we", "Studio") values the privacy of every visitor to <strong>nowlvisiongames.com</strong> ("Site"). This Privacy Policy explains how this Site operates in relation to visitor data, given that our Site is a static site that serves as an informational medium rather than a platform that actively collects user data.',
       'privacy-p-01-b': '<strong>Nowl Vision Games</strong> is the name of an independent (indie) creative project/brand run by an individual and/or a team of developers, and is currently not registered as a formal legal entity (such as a PT or CV) in Indonesia.',
 
       'privacy-h-02': 'The Nature of This Site',
@@ -458,11 +458,11 @@
       'terms-note': 'Dokumen ini adalah kerangka umum Syarat dan Ketentuan yang disusun berdasarkan struktur situs Nowl Vision Games, dengan mempertimbangkan status Studio sebagai proyek indie yang belum berbadan hukum resmi. Dokumen ini <strong>bukan pengganti nasihat hukum profesional</strong>. Sebelum dipublikasikan secara resmi, sangat disarankan untuk ditinjau oleh konsultan hukum agar sesuai dengan regulasi yang berlaku di yurisdiksi Anda, terutama terkait batasan tanggung jawab dan klausul ganti rugi.',
 
       'terms-h-01': 'Pendahuluan',
-      'terms-p-01-a': 'Selamat datang di <strong>nusainteractivestudio.com</strong> ("Situs"), yang dikelola oleh Nowl Vision Games ("kami", "Studio"). Dengan mengakses atau menggunakan Situs ini, Anda ("Pengguna") menyetujui untuk terikat dengan Syarat dan Ketentuan berikut. Jika Anda tidak menyetujui salah satu ketentuan di sini, mohon untuk tidak melanjutkan penggunaan Situs.',
+      'terms-p-01-a': 'Selamat datang di <strong>nowlvisiongames.com</strong> ("Situs"), yang dikelola oleh Nowl Vision Games ("kami", "Studio"). Dengan mengakses atau menggunakan Situs ini, Anda ("Pengguna") menyetujui untuk terikat dengan Syarat dan Ketentuan berikut. Jika Anda tidak menyetujui salah satu ketentuan di sini, mohon untuk tidak melanjutkan penggunaan Situs.',
       'terms-p-01-b': '<strong>Nowl Vision Games</strong> adalah nama proyek/brand kreatif independen (indie) yang dikelola oleh perorangan dan/atau tim developer, dan <strong>saat ini belum berbentuk badan hukum resmi</strong> (seperti PT atau CV) di Indonesia. Seluruh aktivitas, komunikasi, dan produk yang dihasilkan di bawah nama ini dijalankan atas nama proyek independen tersebut. Apabila di kemudian hari status kelembagaan berubah menjadi badan hukum resmi, Syarat dan Ketentuan ini akan diperbarui untuk mencerminkan perubahan tersebut.',
 
       'terms-h-02': 'Definisi',
-      'terms-li-02-situs':    '<strong>Situs</strong> merujuk pada nusainteractivestudio.com beserta seluruh halaman dan subdomain di dalamnya.',
+      'terms-li-02-situs':    '<strong>Situs</strong> merujuk pada nowlvisiongames.com beserta seluruh halaman dan subdomain di dalamnya.',
       'terms-li-02-konten':   '<strong>Konten</strong> mencakup teks, gambar, video, logo, dan materi lain yang dipublikasikan di Situs.',
       'terms-li-02-produk':   '<strong>Produk</strong> merujuk pada game dan aset digital yang dikembangkan oleh Nowl Vision Games, termasuk namun tidak terbatas pada DEMIT dan Perjanjian Gaib.',
       'terms-li-02-pengguna': '<strong>Pengguna</strong> adalah setiap individu yang mengakses atau berinteraksi dengan Situs.',
@@ -534,7 +534,7 @@
       'privacy-note': 'Dokumen ini adalah kerangka umum Kebijakan Privasi yang disusun berdasarkan struktur situs Nowl Vision Games, dengan mempertimbangkan bahwa Situs ini bersifat statis (tidak memiliki sistem formulir, akun pengguna, atau pemrosesan pembayaran), serta status Studio sebagai proyek indie yang belum berbadan hukum resmi. Dokumen ini <strong>bukan pengganti nasihat hukum profesional</strong>. Sebelum dipublikasikan secara resmi, disarankan untuk ditinjau oleh konsultan hukum agar sesuai dengan regulasi perlindungan data yang berlaku (misalnya UU PDP di Indonesia).',
 
       'privacy-h-01': 'Pendahuluan',
-      'privacy-p-01-a': 'Nowl Vision Games ("kami", "Studio") menghargai privasi setiap pengunjung situs <strong>nusainteractivestudio.com</strong> ("Situs"). Kebijakan Privasi ini menjelaskan bagaimana Situs ini beroperasi terkait data pengunjung, mengingat Situs kami adalah situs statis yang berfungsi sebagai media informasi, bukan platform yang mengumpulkan data pengguna secara aktif.',
+      'privacy-p-01-a': 'Nowl Vision Games ("kami", "Studio") menghargai privasi setiap pengunjung situs <strong>nowlvisiongames.com</strong> ("Situs"). Kebijakan Privasi ini menjelaskan bagaimana Situs ini beroperasi terkait data pengunjung, mengingat Situs kami adalah situs statis yang berfungsi sebagai media informasi, bukan platform yang mengumpulkan data pengguna secara aktif.',
       'privacy-p-01-b': '<strong>Nowl Vision Games</strong> adalah nama proyek/brand kreatif independen (indie) yang dikelola oleh perorangan dan/atau tim developer, dan saat ini belum berbentuk badan hukum resmi (seperti PT atau CV) di Indonesia.',
 
       'privacy-h-02': 'Sifat Situs Ini',

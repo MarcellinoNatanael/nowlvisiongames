@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nusainteractivestudio.com/sitemap.xml
+Sitemap: https://nowlvisiongames.com/sitemap.xml
