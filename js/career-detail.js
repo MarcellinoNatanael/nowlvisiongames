@@ -1,6 +1,6 @@
 /**
  * CAREER-DETAIL.JS — Nowl Vision Games
- * Renders one job from window.NVG_JOBS (js/careers-data.js) via career_detail.html?id=<slug>
+ * Renders one job from career-data.html (js/career-loader.js) via career_detail.html?id=<slug>
  */
 (function () {
   'use strict';
@@ -45,23 +45,27 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var id  = new URLSearchParams(window.location.search).get('id');
-    var job = (window.NVG_JOBS || []).filter(function (j) { return j.id === id; })[0];
+  function showNotFound() {
+    var setNotFoundTitle = function () {
+      document.title = window.NVG_t('careers-not-found') + ' — ' + SITE_NAME;
+    };
+    byId('jobNotFound').hidden = false;
+    setNotFoundTitle();
+    document.addEventListener('nvg:langchange', setNotFoundTitle);
+  }
 
-    if (!job) {
-      var setNotFoundTitle = function () {
-        document.title = window.NVG_t('careers-not-found') + ' — ' + SITE_NAME;
-      };
-      byId('jobNotFound').hidden = false;
-      setNotFoundTitle();
-      document.addEventListener('nvg:langchange', setNotFoundTitle);
-      return;
-    }
+  function showLoadError(err) {
+    var status = byId('jobStatus');
+    console.warn(err);
+    status.setAttribute('data-t', 'careers-load-error');
+    status.textContent = window.NVG_t('careers-load-error');
+  }
 
+  function showJob(job) {
     document.title = job.title + ' — ' + SITE_NAME;
     document.querySelector('meta[name="description"]').setAttribute('content',
-      job.title + ' at ' + SITE_NAME + ' (' + job.department + ', ' + job.division + ', ' + job.contract + '). Remote position.');
+      job.title + ' at ' + SITE_NAME + ' (' + job.department + ', ' + job.division + ', ' + job.contract + ').' +
+      (job.location ? ' ' + job.location + ' position.' : ''));
 
     byId('jobTitle').textContent = job.title;
 
@@ -86,5 +90,15 @@
     setApplyLink(byId('jobApplyForm'), job.applyUrl);
 
     byId('jobDetail').hidden = false;
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var id = new URLSearchParams(window.location.search).get('id');
+
+    window.NVG_loadJobs().then(function (jobs) {
+      var job = jobs.filter(function (j) { return j.id === id; })[0];
+      byId('jobStatus').hidden = true;
+      if (job) showJob(job); else showNotFound();
+    }, showLoadError);
   });
 })();

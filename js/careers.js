@@ -1,6 +1,6 @@
 /**
  * CAREERS.JS — Nowl Vision Games
- * Vacancy list: renders window.NVG_JOBS (js/careers-data.js), live search + dropdown filters
+ * Vacancy list: renders the jobs from career-data.html (js/career-loader.js), live search + dropdown filters
  */
 (function () {
   'use strict';
@@ -16,9 +16,7 @@
     var emptyMsg  = document.getElementById('vacancyEmpty');
     if (!list) return;
 
-    var jobs = (window.NVG_JOBS || []).slice().sort(function (a, b) {
-      return String(b.datePosted).localeCompare(String(a.datePosted));
-    });
+    var jobs = null; // stays null until career-data.html has loaded
 
     /* ---- Dropdown options from unique data values ---- */
     function fillSelect(select, field) {
@@ -76,6 +74,7 @@
 
     /* ---- Filter + render ---- */
     function render() {
+      if (!jobs) return; // keep the loading/error message instead of "no vacancies"
       var term = search.value.trim().toLowerCase();
       var matches = jobs.filter(function (job) {
         return String(job.title).toLowerCase().indexOf(term) !== -1 &&
@@ -95,10 +94,6 @@
       }
     }
 
-    fillSelect(selDept, 'department');
-    fillSelect(selDiv, 'division');
-    fillSelect(selCon, 'contract');
-
     search.addEventListener('input', render);
     [selDept, selDiv, selCon].forEach(function (s) { s.addEventListener('change', render); });
     form.addEventListener('submit', function (e) {
@@ -106,6 +101,17 @@
       render();
     });
 
-    render();
+    window.NVG_loadJobs().then(function (loaded) {
+      jobs = loaded.slice().sort(function (a, b) {
+        return String(b.datePosted).localeCompare(String(a.datePosted));
+      });
+      fillSelect(selDept, 'department');
+      fillSelect(selDiv, 'division');
+      fillSelect(selCon, 'contract');
+      render();
+    }, function (err) {
+      console.warn(err);
+      showEmpty('careers-load-error');
+    });
   });
 })();

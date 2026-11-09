@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lowongan — Nowl Vision Games</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 20px;
+      background: #111111;
+      color: #fff;
+      font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+      line-height: 1.6;
+    }
+    h1 { margin: 0 0 24px; font-size: 26px; letter-spacing: .04em; text-transform: uppercase; }
+    .job {
+      margin-bottom: 20px;
+      padding: 20px 24px;
+      background: #1a1a1a;
+      border-left: 4px solid #8B0000;
+    }
+    .job::before {
+      content: attr(data-department) " / " attr(data-division) " / " attr(data-contract) " / " attr(data-location) " / " attr(data-date);
+      font-size: 13px;
+      color: rgba(255,255,255,.7);
+    }
+    .job::after {
+      content: "ID: " attr(data-id) " | Apply: " attr(data-apply);
+      display: block;
+      margin-top: 16px;
+      font-size: 13px;
+      color: rgba(255,255,255,.55);
+      overflow-wrap: anywhere;
+    }
+    .job-title { margin: 6px 0 12px; font-size: 22px; text-transform: uppercase; }
+    section { margin-top: 14px; }
+    section::before {
+      display: block;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.6);
+    }
+    section[data-section="responsibilities"]::before { content: "Responsibilities"; }
+    section[data-section="requirements"]::before     { content: "Requirements"; }
+    section[data-section="benefits"]::before         { content: "What You Get"; }
+    section[data-section="how-to-apply"]::before     { content: "How To Apply"; }
+    ul { margin: 6px 0 0; padding-left: 20px; }
+    li::marker { color: #8B0000; }
+    p { margin: 6px 0 0; color: rgba(255,255,255,.85); }
+  </style>
+</head>
+<body>
+
+<!--
+  ================================================================
+  PANDUAN MENGURUS LOWONGAN
+  Cukup edit file ini. Halaman Careers membaca semua blok <article> di bawah.
+  ================================================================
+
+  MENAMBAH LOWONGAN
+    Salin blok TEMPLATE di bagian bawah panduan ini (atau salin satu blok
+    <article> yang sudah ada), tempel tepat di bawah baris <h1>Data Lowongan</h1>
+    (di luar komentar panduan ini), lalu ganti isinya.
+    Urutan blok bebas, karena daftar otomatis urut dari tanggal terbaru.
+
+  MENGEDIT LOWONGAN
+    Ubah teks atau nilai atribut di blok yang bersangkutan.
+
+  MENGHAPUS LOWONGAN
+    Hapus seluruh bloknya, mulai dari <article ...> sampai </article>.
+    Kalau semua blok dihapus, halaman menampilkan pesan belum ada lowongan.
+
+  ARTI ATRIBUT
+    data-id          Kode unik lowongan, dipakai di alamat halaman detail
+                     (career_detail.html?id=kode-ini).
+                     Aturan: huruf kecil, pakai tanda hubung, unik, tanpa spasi.
+                     Contoh: game-tester-intern
+    data-department  Nama departemen, misalnya Quality, Art, Audio.
+    data-division    Nama divisi, misalnya Porting, Full Development Cycle.
+    data-contract    Jenis kontrak: Internship, Freelance, Full-time, Part-time, atau Contract.
+    data-location    Lokasi kerja, misalnya Remote. Dipakai di deskripsi untuk Google.
+    data-date        Tanggal posting dengan format YYYY-MM-DD. Contoh: 2026-11-08
+    data-apply       Link Google Form, atau # kalau belum ada.
+
+    Pilihan di dropdown filter terisi otomatis dari data-department, data-division,
+    dan data-contract, jadi tidak perlu diatur terpisah.
+
+  BAGIAN ISI
+    responsibilities  Daftar tanggung jawab. Satu poin = satu <li>.
+    requirements      Daftar persyaratan. Satu poin = satu <li>.
+    benefits          Daftar "What You Get". Satu poin = satu <li>.
+    how-to-apply      Satu paragraf ajakan melamar.
+
+  CATATAN
+    Blok tanpa data-id atau tanpa judul akan dilewati.
+    Kalau ada data-id yang sama, hanya blok pertama yang dipakai.
+    Peringatannya muncul di Console browser (F12).
+
+  ================================================================
+  TEMPLATE KOSONG: salin dari <article sampai </article>
+  ================================================================
+
+<article class="job"
+  data-id=""
+  data-department=""
+  data-division=""
+  data-contract=""
+  data-location="Remote"
+  data-date="YYYY-MM-DD"
+  data-apply="#">
+
+  <h2 class="job-title">Judul Posisi</h2>
+
+  <section data-section="responsibilities">
+    <ul>
+      <li>...</li>
+    </ul>
+  </section>
+
+  <section data-section="requirements">
+    <ul>
+      <li>...</li>
+    </ul>
+  </section>
+
+  <section data-section="benefits">
+    <ul>
+      <li>...</li>
+    </ul>
+  </section>
+
+  <section data-section="how-to-apply">
+    <p>...</p>
+  </section>
+</article>
+
+-->
+
+<h1>Data Lowongan</h1>
+
+<!-- Tempel blok lowongan baru di sini. -->
+
+<article class="job"
+  data-id="game-tester-intern"
+  data-department="Quality"
+  data-division="Porting"
+  data-contract="Internship"
+  data-location="Remote"
+  data-date="2026-11-08"
+  data-apply="#">
+
+  <h2 class="job-title">Game Tester Intern</h2>
+
+  <section data-section="responsibilities">
+    <ul>
+      <li>Play through builds of Nowl Vision Games titles and follow structured test plans.</li>
+      <li>Find, reproduce, and document bugs with clear steps, screenshots, or video.</li>
+      <li>Check performance, controls, and save data across target PC configurations.</li>
+      <li>Report on pacing, puzzle clarity, and horror moments that do not land as intended.</li>
+      <li>Verify fixes and run regression tests before each new build goes out.</li>
+    </ul>
+  </section>
+
+  <section data-section="requirements">
+    <ul>
+      <li>Currently studying or recently graduated; any major is welcome.</li>
+      <li>Enjoys horror games and can play them for extended sessions.</li>
+      <li>Careful, patient, and able to write clear reports in English or Indonesian.</li>
+      <li>Owns a PC able to run Unreal Engine games at medium settings.</li>
+      <li>Available at least 20 hours per week for three months.</li>
+    </ul>
+  </section>
+
+  <section data-section="benefits">
+    <ul>
+      <li>Fully remote work with flexible hours.</li>
+      <li>Hands-on experience in an indie horror game production.</li>
+      <li>Mentoring from the Nowl Vision Games development team.</li>
+      <li>Internship certificate and a credit in the games you help test.</li>
+    </ul>
+  </section>
+
+  <section data-section="how-to-apply">
+    <p>Interested in joining Nowl Vision Games? This is a remote position. Click the Apply Now button below and complete the application form, and tell us about the horror game that scared you the most.</p>
+  </section>
+</article>
+
+<article class="job"
+  data-id="freelance-2d-game-artist"
+  data-department="Art"
+  data-division="Full Development Cycle"
+  data-contract="Freelance"
+  data-location="Remote"
+  data-date="2026-11-01"
+  data-apply="#">
+
+  <h2 class="job-title">Freelance 2D Game Artist</h2>
+
+  <section data-section="responsibilities">
+    <ul>
+      <li>Create 2D concept art for characters, spirits, and environments inspired by Indonesian folklore.</li>
+      <li>Produce in-game 2D assets such as textures, UI elements, posters, and collectible documents.</li>
+      <li>Prepare promotional art for store pages and social media.</li>
+      <li>Work with the game design team to keep a consistent, unsettling visual style.</li>
+      <li>Revise work based on feedback and deliver organized source files on schedule.</li>
+    </ul>
+  </section>
+
+  <section data-section="requirements">
+    <ul>
+      <li>A portfolio showing strong 2D illustration or concept art.</li>
+      <li>Proficient in Photoshop, Clip Studio Paint, Krita, or similar tools.</li>
+      <li>Comfortable with dark, horror-themed subject matter.</li>
+      <li>Interest in Indonesian culture, myths, and urban legends.</li>
+      <li>Reliable communication and the ability to meet agreed deadlines.</li>
+    </ul>
+  </section>
+
+  <section data-section="benefits">
+    <ul>
+      <li>Fully remote, project-based collaboration.</li>
+      <li>Paid per agreed milestone.</li>
+      <li>Creative input on the look of an original horror title.</li>
+      <li>Official credit in the game and permission to show approved work in your portfolio.</li>
+    </ul>
+  </section>
+
+  <section data-section="how-to-apply">
+    <p>Want to give shape to the stories of the archipelago with Nowl Vision Games? This is a remote position. Click the Apply Now button below and include a link to your portfolio in the application form.</p>
+  </section>
+</article>
+
+<article class="job"
+  data-id="freelance-sound-designer"
+  data-department="Audio"
+  data-division="Full Development Cycle"
+  data-contract="Freelance"
+  data-location="Remote"
+  data-date="2026-10-27"
+  data-apply="#">
+
+  <h2 class="job-title">Freelance Sound Designer</h2>
+
+  <section data-section="responsibilities">
+    <ul>
+      <li>Design ambience, creature sounds, and sound effects that build tension and dread.</li>
+      <li>Record and process Foley for footsteps, objects, and environments.</li>
+      <li>Implement and balance audio in Unreal Engine with the programming team.</li>
+      <li>Mix and master in-game audio across headphones and speakers.</li>
+      <li>Contribute ideas on how silence and sound can carry the horror experience.</li>
+    </ul>
+  </section>
+
+  <section data-section="requirements">
+    <ul>
+      <li>A demo reel or portfolio of sound design work, ideally for games or film.</li>
+      <li>Proficient in a DAW such as Reaper, Ableton Live, or Pro Tools.</li>
+      <li>Understanding of how sound builds atmosphere in psychological horror.</li>
+      <li>Experience with Unreal Engine audio, MetaSounds, FMOD, or Wwise is a plus.</li>
+      <li>Owns a home recording setup and quality monitoring headphones.</li>
+    </ul>
+  </section>
+
+  <section data-section="benefits">
+    <ul>
+      <li>Fully remote, project-based collaboration.</li>
+      <li>Paid per agreed milestone.</li>
+      <li>Creative freedom in shaping the soundscape of an original horror title.</li>
+      <li>Official credit in the game and permission to show approved work in your reel.</li>
+    </ul>
+  </section>
+
+  <section data-section="how-to-apply">
+    <p>Ready to make players afraid of what they cannot see? This is a remote position with Nowl Vision Games. Click the Apply Now button below and include a link to your demo reel in the application form.</p>
+  </section>
+</article>
+
+</body>
+</html>

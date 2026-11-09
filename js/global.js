@@ -359,7 +359,9 @@
       'careers-apply-now':        'Apply Now',
       'careers-apply-note':       '*If the "Apply Now" button is not working, please directly apply via',
       'careers-apply-form':       'Application Form',
-      'careers-not-found':        'Position not found'
+      'careers-not-found':        'Position not found',
+      'careers-loading':          'Loading vacancies...',
+      'careers-load-error':       'Failed to load vacancies. Please reload the page.'
     },
     id: {
       'nav-home':        'Beranda',
@@ -713,7 +715,9 @@
       'careers-apply-now':        'Lamar Sekarang',
       'careers-apply-note':       '*Jika tombol "Lamar Sekarang" tidak berfungsi, silakan langsung melamar melalui',
       'careers-apply-form':       'Formulir Lamaran',
-      'careers-not-found':        'Posisi tidak ditemukan'
+      'careers-not-found':        'Posisi tidak ditemukan',
+      'careers-loading':          'Memuat lowongan...',
+      'careers-load-error':       'Gagal memuat daftar lowongan. Coba muat ulang halaman.'
     }
   };
 
