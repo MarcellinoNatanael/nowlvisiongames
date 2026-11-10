@@ -51,6 +51,8 @@
     ul { margin: 6px 0 0; padding-left: 20px; }
     li::marker { color: #8B0000; }
     p { margin: 6px 0 0; color: rgba(255,255,255,.85); }
+    .empty-note { padding: 20px 24px; background: #1a1a1a; border-left: 4px solid #8B0000; }
+    body:has(article.job) .empty-note { display: none; }
   </style>
 </head>
 <body>
@@ -143,6 +145,14 @@
 <h1>Data Lowongan</h1>
 
 <!-- Tempel blok lowongan baru di sini. -->
+
+<p class="empty-note">Belum ada lowongan aktif. Halaman Careers menampilkan keterangan &quot;belum ada lowongan&quot;.</p>
+
+<!--
+  CONTOH LOWONGAN (NONAKTIF)
+  Tiga blok di bawah sengaja dinonaktifkan supaya belum ada lowongan yang tampil di situs.
+  Untuk mengaktifkan salah satunya, pindahkan bloknya ke luar komentar ini,
+  tepat di bawah baris "Tempel blok lowongan baru di sini" di atas.
 
 <article class="job"
   data-id="game-tester-intern"
@@ -278,6 +288,8 @@
     <p>Ready to make players afraid of what they cannot see? This is a remote position with Nowl Vision Games. Click the Apply Now button below and include a link to your demo reel in the application form.</p>
   </section>
 </article>
+
+-->
 
 </body>
 </html>
