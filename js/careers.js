@@ -14,6 +14,7 @@
     var head      = document.getElementById('vacancyHead');
     var list      = document.getElementById('vacancyList');
     var emptyMsg  = document.getElementById('vacancyEmpty');
+    var noneMsg   = document.getElementById('vacancyNone'); // static HTML; its links come from T, never from job data
     if (!list) return;
 
     var jobs = null; // stays null until career-data.html has loaded
@@ -75,6 +76,17 @@
     /* ---- Filter + render ---- */
     function render() {
       if (!jobs) return; // keep the loading/error message instead of "no vacancies"
+
+      // No vacancies at all: filters and column headers have nothing to act on
+      var hasJobs = jobs.length > 0;
+      form.hidden = !hasJobs;
+      noneMsg.hidden = hasJobs;
+      if (!hasJobs) {
+        head.hidden = true;
+        emptyMsg.hidden = true;
+        return;
+      }
+
       var term = search.value.trim().toLowerCase();
       var matches = jobs.filter(function (job) {
         return String(job.title).toLowerCase().indexOf(term) !== -1 &&
@@ -90,7 +102,7 @@
       if (matches.length) {
         emptyMsg.hidden = true;
       } else {
-        showEmpty(jobs.length ? 'careers-empty-filter' : 'careers-empty-none');
+        showEmpty('careers-empty-filter');
       }
     }
 

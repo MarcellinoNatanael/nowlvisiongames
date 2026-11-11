@@ -2,6 +2,69 @@
 
 .careers-main-section { background: transparent; }
 
+/* ---- Work With Us (static content) ---- */
+.careers-intro-section { background: transparent; padding-bottom: 0; }
+.careers-lead {
+  max-width: 760px;
+  margin: 0 auto 52px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.8);
+}
+.careers-subtitle {
+  margin-bottom: 18px;
+  font-size: 18px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.careers-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 52px;
+}
+.careers-card {
+  padding: 28px 24px;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,.08);
+  border-top: 2px solid #8B0000;
+  border-radius: 8px;
+}
+.careers-card-icon { margin-bottom: 14px; font-size: 26px; color: #ff4d4d; }
+.careers-card-title { margin-bottom: 10px; font-size: 17px; letter-spacing: .03em; }
+.careers-card-text  { font-size: 15px; line-height: 1.6; color: rgba(255,255,255,.75); }
+.careers-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+.careers-bullets li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: rgba(255,255,255,.8);
+}
+.careers-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: .68em;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #c41e1e;
+}
+.careers-roles { display: flex; flex-wrap: wrap; gap: 10px; }
+.careers-roles li {
+  padding: 6px 14px;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,.2);
+  font-size: 14px;
+  letter-spacing: .04em;
+  color: rgba(255,255,255,.85);
+}
+.vacancy-empty a { color: #ff4d4d; text-decoration: underline; text-underline-offset: 2px; }
+.vacancy-filters[hidden] { display: none; }
+
 /* ---- Filters ---- */
 .vacancy-filters {
   display: grid;
@@ -117,7 +180,12 @@
   .vacancy-filters { grid-template-columns: repeat(3, minmax(0, 1fr)) 44px; }
   .vacancy-input   { grid-column: 1 / -1; }
 }
+@media (max-width: 900px) {
+  .careers-cards   { grid-template-columns: 1fr; gap: 16px; }
+  .careers-columns { grid-template-columns: 1fr; gap: 32px; }
+}
 @media (max-width: 768px) {
+  .careers-lead       { margin-bottom: 40px; font-size: 15px; }
   .vacancy-filters    { grid-template-columns: 1fr; }
   .vacancy-input      { grid-column: auto; }
   .vacancy-search-btn { justify-self: end; }
